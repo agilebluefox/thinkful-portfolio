@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+img { 
+    max-width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Slackey', cursive;
+}
+
+.nav-link {
+    color: #eee;
+    font-weight: 200;
+}
+
+a.nav-link:link {
+    color: #eee;
+}
+
+a.nav-link:visited {
+    color: #eee;
+}
+
+a.nav-link:hover  {
+    color: #017bc6;
+}
+
+a.nav-link:focus {
+    color: #eee;
+}
+
+a.nav-link:active {
+    color: #017bc6;
+}
+
+.bg-blue {
+    background-color: rgba(0.8%, 11.8%, 25.7%, .6);
+}
+
+#cover {
+    background: url('../images/blue-design.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#cover-caption {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
