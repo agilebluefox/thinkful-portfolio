@@ -1,19 +1,30 @@
-html, body {
+// variables
+$light: #ddd;
+$med: #aaa;
+$bg: rgba(0.8%, 11.8%, 25.7%, .6);
+$bg-comp: #017bc6;
+html,
+body {
     height: 100%;
 }
 
 body {
-    color: white;
+    color: $light;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $light;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: bold;
 }
 
-img { 
+img {
     max-width: 100%;
 }
 
@@ -22,32 +33,32 @@ img {
 }
 
 .nav-link {
-    color: #eee;
+    color: $light;
     font-weight: 200;
 }
 
 a.nav-link:link {
-    color: #eee;
+    color: $light;
 }
 
 a.nav-link:visited {
-    color: #eee;
+    color: $light;
 }
 
-a.nav-link:hover  {
-    color: #017bc6;
+a.nav-link:hover {
+    color: $bg-comp;
 }
 
 a.nav-link:focus {
-    color: #eee;
+    color: $light;
 }
 
 a.nav-link:active {
-    color: #017bc6;
+    color: $bg-comp;
 }
 
 .bg-blue {
-    background-color: rgba(0.8%, 11.8%, 25.7%, .6);
+    background-color: $bg;
 }
 
 #cover {
@@ -57,14 +68,42 @@ a.nav-link:active {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #cover-caption {
     font-size: 1.4rem;
     font-weight: 200;
     max-width: 60rem;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto; //text-align: center;
 }
 
+div.row {
+    padding: 4rem;
+}
 
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2.project-name {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.image {
+    width: 100%;
+}
+
+div.image, div.project-info {
+    width: 100%;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    .image {
+        width: 50%;
+    }
+}

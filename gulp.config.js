@@ -12,10 +12,14 @@ module.exports = function () {
         // File Paths
         build: build,
         client: client,
-        css: client + 'css/',
-        index: client + 'index.html',
+        css: client + 'styles/',
+        index: 'index.html',
         images: client + 'images/**/*.*',
         temp: temp,
+
+        // Browser-sync
+        bsCss: build + 'styles/**/*.css',
+        bsJs: build + 'scripts/**/*.css'
     };
 
     return config;
