@@ -2,6 +2,8 @@
 $light: #ddd;
 $med: #aaa;
 $dark: #444;
+$red: #990000;
+// $red: #730300;
 $bg: rgba(0.8%, 11.8%, 25.7%, .9);
 $bg-comp1: #017bc6;
 $bg-comp2: rgba(0%, 7.1%, 16.8%, 1);
@@ -164,7 +166,7 @@ div.project-buttons {
 }
 
 #project-04 {
-    background-color: $dark;
+    background-color: $red;
     color: $light;
     h6.project-name {
         color: $light;
