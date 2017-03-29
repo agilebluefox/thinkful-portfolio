@@ -17,6 +17,7 @@ gulp.task('default', ['help']);
 
 // Inject the css and js links into the html file
 gulp.task('index', ['clean:index'], () => {
+    log('Updating the index file...');
     let target = gulp.src(config.client + 'index.html');
     let sources = gulp.src([config.css + '**/*.css'], {
         read: false
@@ -108,7 +109,7 @@ gulp.task('clean:scripts', (done) => {
 // Activate browser-sync and watch for changes
 gulp.task('serve', ['index', 'styles'], () => {
     gulp.watch(config.css + '*.scss', ['styles']);
-    gulp.watch(config.client + 'index.html', ['index']);
+    gulp.watch(config.index, ['index']);
     browserSync.init([config.bsCss, config.bsJs], {
         server: {
             baseDir: config.build
