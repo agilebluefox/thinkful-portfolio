@@ -172,10 +172,27 @@ div.project-buttons {
 }
 
 @media screen and (min-width: 576px) {
-    .image {
+    div.image {
         width: 50%;
     }
     div.row {
         padding: 4rem;
     }
+}
+
+@media screen and (min-width: 992px) {
+    div.image {
+        width: 50%;
+    }
+
+    #project-02 {
+    background-color: $bg-comp2;
+    color: $med;
+    h6.project-name {
+        color: $med;
+    }
+    div.image {
+        width: 30%;
+    }
+}
 }

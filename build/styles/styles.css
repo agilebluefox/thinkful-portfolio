@@ -145,7 +145,18 @@ div.project-buttons {
     color: #ddd; }
 
 @media screen and (min-width: 576px) {
-  .image {
+  div.image {
     width: 50%; }
   div.row {
     padding: 4rem; } }
+
+@media screen and (min-width: 992px) {
+  div.image {
+    width: 50%; }
+  #project-02 {
+    background-color: #00122b;
+    color: #aaa; }
+    #project-02 h6.project-name {
+      color: #aaa; }
+    #project-02 div.image {
+      width: 30%; } }
