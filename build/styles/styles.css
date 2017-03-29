@@ -140,9 +140,9 @@ div.project-buttons {
 
 #project-04 {
   background-color: #444;
-  color: #aaa; }
+  color: #ddd; }
   #project-04 h6.project-name {
-    color: #aaa; }
+    color: #ddd; }
 
 @media screen and (min-width: 576px) {
   .image {

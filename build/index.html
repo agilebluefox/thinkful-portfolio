@@ -21,10 +21,10 @@
                 <a class="nav-link active" href="#">home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">projects</a>
+                <a class="nav-link" href="#projects">projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">about</a>
+                <a class="nav-link" href="#about">about</a>
             </li>
         </ul>
     </nav>
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="section-heading d-flex flex-row align-items-center justify-content-center justify-content-start">
-        <h2 class="section d-flex align-self-center ">Projects</h2>
+        <h2 id="projects" class="section d-flex align-self-center ">Projects</h2>
     </div>
     <section id="project-01">
         <div class="section-container">
@@ -47,8 +47,8 @@
                     </div>
                     <div class="project-info">
                         <h6 class="project-name d-flex justify-content-center">Tennis Quiz</h6>
-                        <p class="summary">My personal website as a Lecturer in the Department of Health and Exercise Studies at NC State University
-                            containing some general info about me, my courses, and projects.</p>
+                        <p class="summary">Interactive quiz application which tests the users knowledge of some tennis facts about some of the top players on the ATP Tour.
+</p>
                         <div class="project-skills">
                             <p><span class="inline-heading">Technical Skills:</span>CSS, Git/Github, Gulp, HTML, JQuery, Less,
                                 Webpack
@@ -70,7 +70,7 @@
                             </p>
                         </div>
                         <div class="project-notables">
-                            <p><span class="inline-heading">Notable Accomplishments:</span>The general build system was orchestrated using Gulp JS and a custom gulpfile. Less, the CSS preprocessor, was used to aid in writing more efficient css code. Webpack provided the final bundling of the javascript files that were used in the "production" version of the application.</p>
+                            <p><span class="inline-heading">Notable Features:</span>The general build system was orchestrated using Gulp JS and a custom gulpfile. Less, the CSS preprocessor, was used to aid in writing more efficient css code. Webpack provided the final bundling of the javascript files that were used in the "production" version of the application.</p>
                         </div>
                         <div class="project-buttons d-flex justify-content-around">
                             <a role="button" class="btn btn-outline-primary" href="http://agilebluefox.github.io/tennis-quiz-mvc">Demo Site</a>
@@ -93,19 +93,22 @@
                         <p class="summary">This app manages the participants at an orienteering event keeping track of the participant's status
                             during the event. </p>
                         <div class="project-skills">
-                            <p><span class="inline-heading">Technical Skills:</span>
+                            <p><span class="inline-heading">Technical Skills:</span>Angular, Angular CLI, CSS, Javascript, HTML, SASS, Typescript
+
                             </p>
                         </div>
                         <div class="project-description">
-                            <p><span class="inline-heading">Description:</span>
+                            <p><span class="inline-heading">Description:</span>This is the frontend interface for the O-Results application built using the Angular framework. The user can add an event or select an already existing event to manage, view, or track participants as their status changes during the event. All data changes are saved to the associated Mongo collections through API calls to the routes on the Node server setup using Express. This project presented numerous challenges beginning with the database design to managing the state of the application using Observables, the foundation of reactive programming. Although manipulating and passing data through Angular parent and child components is relatively simple, I ran into issues when data was altered in components with no direct connection. As a result, I had the opportunity to solve problems dealing with the concepts of application state, object immutability, and the asynchronous nature of the web browser.
+
                             </p>
                         </div>
                         <div class="project-notables">
-                            <p><span class="inline-heading">Notable Accomplishments:</span></p>
+                            <p><span class="inline-heading">Notable Features:</span>The interface is designed using an alpha release of Material Design. I really like the consistent look and feel of Google's CSS framework and since our university relies heavily on Google Apps I intend to use it frequently in future applications. To implement the forms in the application I chose Angular's Reactive Forms technology which allowed me to keep most of the form logic in the component and maintain a cleaner, more maintainable template file.
+</p>
                         </div>
                         <div class="project-buttons d-flex justify-content-around">
                             <!--<a role="button" class="btn btn-outline-primary" href="">Demo Site</a>-->
-                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-node">Github Repo</a>
+                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-angular">Github Repo</a>
                         </div>
                     </div>
                 </div>
@@ -146,8 +149,7 @@
                                 and informational purposes when the Node JS server is running in production mode.</p>
                         </div>
                         <div class="project-buttons d-flex justify-content-around">
-                            <a role="button" class="btn btn-outline-primary" href="">Demo Site</a>
-                            <a role="button" class="btn btn-outline-info" href="">Github Repo</a>
+                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-node">Github Repo</a>
                         </div>
                     </div>
                 </div>
@@ -185,15 +187,15 @@
                             </p>
                         </div>
                         <div class="project-notables">
-                            <p><span class="inline-heading">Notable Accomplishments:</span>The most notable feature on the site
+                            <p><span class="inline-heading">Notable Features:</span>The most notable feature on the site
                                 is the responsive menu which I designed using a mix of JQuery and CSS without the need of
                                 any additional javascript libraries. To add a little flare and to make the project more fun
                                 and interesting, I included an AJAX-rendered news feed using the Health section of the New
-                                York Times.</p>
+                                York Times. Lastly, all of the syllabi files are written using Multimarkdown syntax and compiled into HTML files.</p>
                         </div>
                         <div class="project-buttons d-flex justify-content-around">
-                            <a role="button" class="btn btn-outline-primary" href="">Demo Site</a>
-                            <a role="button" class="btn btn-outline-info" href="">Github Repo</a>
+                            <a role="button" class="btn btn-outline-primary" href="http://www4.ncsu.edu/~daconner/">Live Site</a>
+                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/hes-portfolio">Github Repo</a>
                         </div>
                     </div>
                 </div>
