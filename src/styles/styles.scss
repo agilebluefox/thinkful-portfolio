@@ -1,8 +1,10 @@
 // variables
 $light: #ddd;
 $med: #aaa;
-$bg: rgba(0.8%, 11.8%, 25.7%, .6);
-$bg-comp: #017bc6;
+$dark: #444;
+$bg: rgba(0.8%, 11.8%, 25.7%, .9);
+$bg-comp1: #017bc6;
+$bg-comp2: rgba(0%, 7.1%, 16.8%, 1);
 html,
 body {
     height: 100%;
@@ -46,7 +48,7 @@ a.nav-link:visited {
 }
 
 a.nav-link:hover {
-    color: $bg-comp;
+    color: $bg-comp1;
 }
 
 a.nav-link:focus {
@@ -54,7 +56,7 @@ a.nav-link:focus {
 }
 
 a.nav-link:active {
-    color: $bg-comp;
+    color: $bg-comp1;
 }
 
 .bg-blue {
@@ -72,14 +74,29 @@ a.nav-link:active {
 }
 
 #cover-caption {
+    padding: 0 1rem;
     font-size: 1.4rem;
     font-weight: 200;
     max-width: 60rem;
     margin: 0 auto; //text-align: center;
 }
 
+div.section-heading {
+    height: 6rem;
+    background-color: $bg-comp2;
+}
+
+h2.section {
+    padding-left: 1rem;
+    width: 100%;
+    color: $light;
+    font-family: Roboto, Arial, Helvetica;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
 div.row {
-    padding: 4rem;
+    padding: 0.5rem;
 }
 
 .section-content {
@@ -88,22 +105,77 @@ div.row {
     justify-content: center;
 }
 
-h2.project-name {
+span.inline-heading {
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+
+h6.project-name {
     text-transform: capitalize;
     font-size: 1.5rem;
+    padding: 2rem 0;
 }
 
 .image {
     width: 100%;
 }
 
-div.image, div.project-info {
-    width: 100%;
-    padding: 2rem;
+div.image {
+    width: 80%;
+    padding: 2rem 0 0 0;
+    margin: 0 auto;
+}
+
+div.project-info {
+    width: 80%;
+    padding: 0rem;
+    margin: 0 auto;
+}
+
+div.project-buttons {
+    padding: 1rem 0;
+}
+
+#project-01 {
+    background-color: $light;
+    color: $dark;
+    h6.project-name {
+        color: $dark;
+    }
+}
+
+#project-02 {
+    background-color: $bg-comp2;
+    color: $med;
+    h6.project-name {
+        color: $med;
+    }
+    div.image {
+        width: 40%;
+    }
+}
+
+#project-03 {
+    background-color: $light;
+    color: $dark;
+    h6.project-name {
+        color: $dark;
+    }
+}
+
+#project-04 {
+    background-color: $dark;
+    color: $med;
+    h6.project-name {
+        color: $med;
+    }
 }
 
 @media screen and (min-width: 576px) {
     .image {
         width: 50%;
+    }
+    div.row {
+        padding: 4rem;
     }
 }

@@ -42,7 +42,7 @@ a.nav-link:active {
   color: #017bc6; }
 
 .bg-blue {
-  background-color: rgba(2, 30, 66, 0.6); }
+  background-color: rgba(2, 30, 66, 0.9); }
 
 #cover {
   background: url("../images/blue-design.jpg") center center no-repeat;
@@ -60,13 +60,26 @@ a.nav-link:active {
           justify-content: center; }
 
 #cover-caption {
+  padding: 0 1rem;
   font-size: 1.4rem;
   font-weight: 200;
   max-width: 60rem;
   margin: 0 auto; }
 
+div.section-heading {
+  height: 6rem;
+  background-color: #00122b; }
+
+h2.section {
+  padding-left: 1rem;
+  width: 100%;
+  color: #ddd;
+  font-family: Roboto, Arial, Helvetica;
+  font-weight: 400;
+  font-size: 1.2rem; }
+
 div.row {
-  padding: 4rem; }
+  padding: 0.5rem; }
 
 .section-content {
   display: -webkit-box;
@@ -80,17 +93,59 @@ div.row {
       -ms-flex-pack: center;
           justify-content: center; }
 
-h2.project-name {
+span.inline-heading {
+  font-weight: bold;
+  padding-right: 0.5rem; }
+
+h6.project-name {
   text-transform: capitalize;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 2rem 0; }
 
 .image {
   width: 100%; }
 
-div.image, div.project-info {
-  width: 100%;
-  padding: 2rem; }
+div.image {
+  width: 80%;
+  padding: 2rem 0 0 0;
+  margin: 0 auto; }
+
+div.project-info {
+  width: 80%;
+  padding: 0rem;
+  margin: 0 auto; }
+
+div.project-buttons {
+  padding: 1rem 0; }
+
+#project-01 {
+  background-color: #ddd;
+  color: #444; }
+  #project-01 h6.project-name {
+    color: #444; }
+
+#project-02 {
+  background-color: #00122b;
+  color: #aaa; }
+  #project-02 h6.project-name {
+    color: #aaa; }
+  #project-02 div.image {
+    width: 40%; }
+
+#project-03 {
+  background-color: #ddd;
+  color: #444; }
+  #project-03 h6.project-name {
+    color: #444; }
+
+#project-04 {
+  background-color: #444;
+  color: #aaa; }
+  #project-04 h6.project-name {
+    color: #aaa; }
 
 @media screen and (min-width: 576px) {
   .image {
-    width: 50%; } }
+    width: 50%; }
+  div.row {
+    padding: 4rem; } }
