@@ -66,6 +66,12 @@ a.nav-link:active {
   max-width: 60rem;
   margin: 0 auto; }
 
+#cover-caption h1 {
+  text-align: center; }
+
+#cover-caption p {
+  text-align: center; }
+
 div.section-heading {
   height: 6rem;
   background-color: #00122b; }
@@ -139,10 +145,17 @@ div.project-buttons {
     color: #444; }
 
 #project-04 {
-  background-color: #990000;
+  background-color: #520400;
   color: #ddd; }
   #project-04 h6.project-name {
     color: #ddd; }
+
+#about {
+  background-color: rgba(2, 30, 66, 0.9);
+  color: #ddd; }
+
+h6.about-section {
+  color: #017bc6; }
 
 @media screen and (min-width: 576px) {
   div.image {

@@ -2,8 +2,8 @@
 $light: #ddd;
 $med: #aaa;
 $dark: #444;
-$red: #990000;
-// $red: #730300;
+$red: #520400;
+// $red: #000;
 $bg: rgba(0.8%, 11.8%, 25.7%, .9);
 $bg-comp1: #017bc6;
 $bg-comp2: rgba(0%, 7.1%, 16.8%, 1);
@@ -81,6 +81,14 @@ a.nav-link:active {
     font-weight: 200;
     max-width: 60rem;
     margin: 0 auto; //text-align: center;
+}
+
+#cover-caption h1 {
+    text-align: center;
+}
+
+#cover-caption p {
+    text-align: center;
 }
 
 div.section-heading {
@@ -171,6 +179,15 @@ div.project-buttons {
     h6.project-name {
         color: $light;
     }
+}
+
+#about {
+    background-color: $bg;
+    color: $light;
+}
+
+h6.about-section {
+    color: $bg-comp1;
 }
 
 @media screen and (min-width: 576px) {
