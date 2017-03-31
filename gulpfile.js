@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const surge = require('gulp-surge');
 const del = require('del');
 const sass = require('gulp-sass');
 const config = require('./gulp.config.js')(); // Load the config settings
@@ -14,6 +15,14 @@ const $ = require('gulp-load-plugins')({
 // Get a list of all the gulp tasks in this file
 gulp.task('help', $.taskListing);
 gulp.task('default', ['help']);
+
+// Deploy the static files to surge
+gulp.task('deploy', ['styles', 'index'], function () {
+  return surge({
+    project: config.build,         // Path to your static build directory
+    domain: 'david-connner.surge.sh'  // Your domain or Surge subdomain
+  });
+});
 
 // Inject the css and js links into the html file
 gulp.task('index', ['clean:index'], () => {
