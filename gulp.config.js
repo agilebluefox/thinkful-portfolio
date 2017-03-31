@@ -19,7 +19,8 @@ module.exports = function () {
 
         // Browser-sync
         bsCss: build + 'styles/**/*.css',
-        bsJs: build + 'scripts/**/*.css'
+        bsJs: build + 'scripts/**/*.css',
+        bsIndex: build + 'index.html'
     };
 
     return config;

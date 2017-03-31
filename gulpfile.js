@@ -107,10 +107,10 @@ gulp.task('clean:scripts', (done) => {
 });
 
 // Activate browser-sync and watch for changes
-gulp.task('serve', ['index', 'styles'], () => {
+gulp.task('serve', ['styles', 'index'], () => {
     gulp.watch(config.css + '*.scss', ['styles']);
-    gulp.watch(config.index, ['index']);
-    browserSync.init([config.bsCss, config.bsJs], {
+    gulp.watch(config.client + 'index.html', ['index']);
+    browserSync.init([config.bsIndex, config.bsCss, config.bsJs], {
         server: {
             baseDir: config.build
         }
