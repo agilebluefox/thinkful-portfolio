@@ -17,7 +17,7 @@ gulp.task('help', $.taskListing);
 gulp.task('default', ['help']);
 
 // Deploy the static files to surge
-gulp.task('deploy', ['styles', 'index'], function () {
+gulp.task('deploy', ['serve'], () => {
   return surge({
     project: config.build,         // Path to your static build directory
     domain: 'david-connner.surge.sh'  // Your domain or Surge subdomain
