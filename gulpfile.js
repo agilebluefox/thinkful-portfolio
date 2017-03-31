@@ -17,11 +17,12 @@ gulp.task('help', $.taskListing);
 gulp.task('default', ['help']);
 
 // Deploy the static files to surge
-gulp.task('deploy', ['serve'], () => {
-  return surge({
-    project: config.build,         // Path to your static build directory
-    domain: 'david-connner.surge.sh'  // Your domain or Surge subdomain
-  });
+gulp.task('deploy', ['index'], () => {
+    log('Deploying to Surge...');
+    return surge({
+        project: config.build, // Path to your static build directory
+        domain: 'david-connner.surge.sh' // Your domain or Surge subdomain
+    });
 });
 
 // Inject the css and js links into the html file
