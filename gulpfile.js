@@ -21,7 +21,7 @@ gulp.task('deploy', ['index'], () => {
     log('Deploying to Surge...');
     return surge({
         project: config.build, // Path to your static build directory
-        domain: 'david-connner.surge.sh' // Your domain or Surge subdomain
+        domain: 'david-conner.surge.sh' // Your domain or Surge subdomain
     });
 });
 
@@ -29,12 +29,12 @@ gulp.task('deploy', ['index'], () => {
 gulp.task('index', ['clean:index'], () => {
     log('Updating the index file...');
     let target = gulp.src(config.client + 'index.html');
-    let sources = gulp.src([config.css + '**/*.css'], {
+    let sources = gulp.src([config.bsCss], {
         read: false
     });
     return target.pipe($.inject(sources, {
             relative: true,
-            ignorePath: 'src'
+            ignorePath: '../build'
         }))
         .pipe(gulp.dest(config.build));
 });
@@ -44,7 +44,8 @@ gulp.task('styles', ['compile-bs'], () => {
     return gulp.src(config.css + '**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe($.autoprefixer({
-            browsers: ['last 2 version', '> 5%']
+            browsers: ['last 2 version', '> 1%'],
+            flexbox: true
         }))
         .pipe(gulp.dest(config.build + 'styles/'));
 });
@@ -56,7 +57,8 @@ gulp.task('compile-bs', () => {
             outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe($.autoprefixer({
-            browsers: ['last 2 version', '> 5%']
+            browsers: ['last 2 version', '> 1%'],
+            flexbox: true
         }))
         .pipe(gulp.dest(config.build + 'styles/'));
 
