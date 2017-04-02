@@ -16,10 +16,6 @@ h6 {
   letter-spacing: 0.1rem;
   font-weight: bold; }
 
-img {
-  max-width: 100%;
-  max-height: 50%; }
-
 .navbar-brand {
   font-family: 'Slackey', cursive; }
 
@@ -64,41 +60,28 @@ a.nav-link:active {
   padding: 0 1rem;
   font-size: 1.4rem;
   font-weight: 200;
-  max-width: 60rem;
-  margin: 0 auto; }
-
-#cover-caption h1 {
-  text-align: center; }
-
-#cover-caption p {
-  text-align: center; }
+  max-width: 60rem; }
 
 div.section-heading {
   height: 6rem;
   background-color: #00122b; }
 
 h2.section {
-  padding-left: 1rem;
+  padding-left: 2rem;
   width: 100%;
   color: #ddd;
   font-family: Roboto, Arial, Helvetica;
   font-weight: 400;
   font-size: 1.2rem; }
 
+.row {
+  margin: 0; }
+
 div.row {
   padding: 0.5rem; }
 
-.section-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+.section-image {
+  margin: auto; }
 
 span.inline-heading {
   font-weight: bold;
@@ -109,18 +92,8 @@ h6.project-name {
   font-size: 1.5rem;
   padding: 2rem 0; }
 
-.image {
-  width: 100%; }
-
 div.image {
-  width: 80%;
-  padding: 2rem 0 0 0;
-  margin: 0 auto; }
-
-div.project-info {
-  width: 80%;
-  padding: 0rem;
-  margin: 0 auto; }
+  width: 100%; }
 
 div.project-buttons {
   padding: 1rem 0; }
@@ -136,8 +109,8 @@ div.project-buttons {
   color: #aaa; }
   #project-02 h6.project-name {
     color: #aaa; }
-  #project-02 div.image {
-    width: 40%; }
+  #project-02 .section-image {
+    width: 75%; }
 
 #project-03 {
   background-color: #ddd;
@@ -162,50 +135,38 @@ h6.about-section {
   color: #017bc6; }
 
 @media screen and (min-width: 576px) {
-  div.image {
-    width: 50%; }
-  div.row {
-    padding: 4rem; } }
+  #cover-caption p {
+    text-align: center; }
+  #project-02 .section-image {
+    max-width: 70%; } }
 
 @media screen and (min-width: 767px) {
-  div.image {
-    width: 50%; }
   #project-02 {
     background-color: #00122b;
     color: #aaa; }
     #project-02 h6.project-name {
-      color: #aaa; }
-    #project-02 div.image {
-      width: 30%; } }
+      color: #aaa; } }
 
 @media screen and (min-width: 992px) {
-  div.image {
-    width: 50%; }
   #project-02 {
     background-color: #00122b;
     color: #aaa; }
     #project-02 h6.project-name {
       color: #aaa; }
-    #project-02 div.image {
-      width: 30%; } }
+    #project-02 .section-image {
+      width: 30em; } }
 
 @media screen and (min-width: 1200px) {
-  .section-image {
-    max-width: 100%; }
   div.image {
-    width: 50%;
     padding: 2rem;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    width: 100%; }
   div.project-info {
-    width: 50%;
-    padding: 2rem;
-    margin: 0 auto; } }
+    padding: 2rem; }
+  #project-02 {
+    background-color: #00122b;
+    color: #aaa; }
+    #project-02 h6.project-name {
+      color: #aaa; }
+    #project-02 .section-image {
+      width: 30em;
+      height: auto; } }
