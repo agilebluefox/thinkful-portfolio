@@ -142,7 +142,7 @@ h6.about-section {
   #cover-caption p {
     text-align: center; }
   #project-02 .section-image {
-    max-width: 70%; } }
+    max-width: 60%; } }
 
 @media screen and (min-width: 767px) {
   #project-02 {
@@ -175,7 +175,13 @@ h6.about-section {
     #project-02 h6.project-name {
       color: #aaa; }
     #project-02 .section-image {
-      width: 30em;
+      width: 20em;
       height: auto; }
   #project-03 div.image {
-    width: 290%; } }
+    width: 290%; }
+  @-moz-document url-prefix() {
+    div.image {
+      padding: 2rem;
+      width: 100%; }
+    #project-03 div.image {
+      width: 100%; } } }
