@@ -81,10 +81,6 @@ a.nav-link:active {
     max-width: 60rem; // text-align: center;
 }
 
-#cover-caption h1 {
-    // text-align: center;
-}
-
 div.section-heading {
     height: 6rem;
     background-color: $bg-comp2;
@@ -107,8 +103,6 @@ div.row {
     padding: 0.5rem;
 }
 
-.section-content {}
-
 .section-image {
     margin: auto;
 }
@@ -124,13 +118,13 @@ h6.project-name {
     padding: 2rem 0;
 }
 
-.image {}
-
 div.image {
     width: 100%;
 }
 
-div.project-info {}
+div.project-info {
+    padding: 0 3rem 3rem 3rem;
+}
 
 div.project-buttons {
     padding: 1rem 0;
@@ -152,6 +146,7 @@ div.project-buttons {
     }
     .section-image {
         width: 75%;
+        margin: auto;
     }
 }
 
@@ -188,7 +183,6 @@ h6.about-section {
     #cover-caption p {
         text-align: center;
     }
-    
     #project-02 {
         .section-image {
             max-width: 70%;
@@ -197,7 +191,6 @@ h6.about-section {
 }
 
 @media screen and (min-width: 767px) {
-    
     #project-02 {
         background-color: $bg-comp2;
         color: $med;
@@ -224,7 +217,11 @@ h6.about-section {
 @media screen and (min-width: 1200px) {
     div.image {
         padding: 2rem;
-        width: 100%;
+        width: 400%;
+    }
+    .section-image {
+        width: 30em;
+        height: auto;
     }
     div.project-info {
         padding: 2rem;
@@ -238,6 +235,11 @@ h6.about-section {
         .section-image {
             width: 30em;
             height: auto;
+        }
+    }
+    #project-03 {
+        div.image {
+            width: 290%;
         }
     }
 }

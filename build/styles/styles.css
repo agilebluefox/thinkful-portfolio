@@ -95,6 +95,9 @@ h6.project-name {
 div.image {
   width: 100%; }
 
+div.project-info {
+  padding: 0 3rem 3rem 3rem; }
+
 div.project-buttons {
   padding: 1rem 0; }
 
@@ -110,7 +113,8 @@ div.project-buttons {
   #project-02 h6.project-name {
     color: #aaa; }
   #project-02 .section-image {
-    width: 75%; }
+    width: 75%;
+    margin: auto; }
 
 #project-03 {
   background-color: #ddd;
@@ -159,7 +163,10 @@ h6.about-section {
 @media screen and (min-width: 1200px) {
   div.image {
     padding: 2rem;
-    width: 100%; }
+    width: 400%; }
+  .section-image {
+    width: 30em;
+    height: auto; }
   div.project-info {
     padding: 2rem; }
   #project-02 {
@@ -169,4 +176,6 @@ h6.about-section {
       color: #aaa; }
     #project-02 .section-image {
       width: 30em;
-      height: auto; } }
+      height: auto; }
+  #project-03 div.image {
+    width: 290%; } }
