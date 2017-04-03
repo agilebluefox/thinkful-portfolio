@@ -45,7 +45,7 @@ a.nav-link:active {
   background: url("../images/blue-design.jpg") center center no-repeat;
   background-size: cover;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +55,12 @@ a.nav-link:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  #cover {
+    margin-left: 0;
+    margin-right: 0; } }
 
 #cover-caption {
   padding: 0 1rem;

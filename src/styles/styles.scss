@@ -68,10 +68,19 @@ a.nav-link:active {
     background: url('../images/blue-design.jpg') center center no-repeat;
     background-size: cover;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    #cover {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 #cover-caption {
@@ -241,7 +250,8 @@ h6.about-section {
         div.image {
             width: 290%;
         }
-    }
+    } 
+    
     // Only Mozilla browsers
     @-moz-document url-prefix() {
         div.image {
