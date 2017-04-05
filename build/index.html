@@ -33,9 +33,13 @@
 
     <div id="cover">
         <div class="container-fluid">
-            <div id="cover-caption">
-                <h1 class="display-3">David Conner</h1>
-                <p>Web Developer. Powered by Curiosity.</p>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="cover-caption">
+                        <h1 class="display-3">David Conner</h1>
+                        <p>Web Developer. Powered by Curiosity.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -44,45 +48,47 @@
     </div>
     <section id="project-01">
         <div class="section-container">
-            <div class="container-fluid row">
-                <div class="section-content d-flex flex-column flex-xl-row">
-                    <div class="image media p-5 flex-xl-last">
-                        <img class="section-image img-fluid align-self-center" src="images/tennis-quiz-image.png" alt="Desktop and mobile view of the interface">
-                    </div>
-                    <div class="project-info">
-                        <h6 class="project-name d-flex justify-content-center">Tennis Quiz</h6>
-                        <p class="summary">Interactive quiz application which tests the users knowledge of some tennis facts about some of the
-                            top players on the ATP Tour.
-                        </p>
-                        <div class="project-skills flex-xl-first">
-                            <p><span class="inline-heading">Technical Skills:</span>CSS, Git/Github, Gulp, HTML, JQuery, Less,
-                                Webpack
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-content d-flex flex-column flex-xl-row">
+                        <div class="image media p-5 flex-xl-last">
+                            <img class="section-image img-fluid align-self-center" src="images/tennis-quiz-image.png" alt="Desktop and mobile view of the interface">
+                        </div>
+                        <div class="project-info">
+                            <h6 class="project-name d-flex justify-content-center">Tennis Quiz</h6>
+                            <p class="summary">Interactive quiz application which tests the users knowledge of some tennis facts about some
+                                of the top players on the ATP Tour.
                             </p>
-                        </div>
-                        <div class="project-description">
-                            <p><span class="inline-heading">Description:</span>This project presented a fun and interesting
-                                challenge to design a simple application using the principles of the Model-View-Controller
-                                (MVC) paradigm. The interactive features are entirely dependent on the JQuery library and
-                                the code is primarily organized in three distinct files: controller.js, model.js, and view.js.
-                                Easy, right? Although the concept seems simple, this application created some unexpected
-                                challenges that forced me to focus intently on maintaining the separation of the components
-                                into isolated blocks. On several occassions, I found myself unwittingly inserting code which
-                                belonged in one division, such as the model, into functions residing in one of the other
-                                areas, such as the controller. Overall, this project gave me a greater appreciation of the
-                                importance of design patterns and the planning, discipline and commitment it takes to stay
-                                on course, especially when a quick shortcut might resolve a mind-bending issue in the short
-                                run.
-                            </p>
-                        </div>
-                        <div class="project-notables">
-                            <p><span class="inline-heading">Notable Features:</span>The general build system was orchestrated
-                                using Gulp JS and a custom gulpfile. Less, the CSS preprocessor, was used to aid in writing
-                                more efficient css code. Webpack provided the final bundling of the javascript files that
-                                were used in the "production" version of the application.</p>
-                        </div>
-                        <div class="project-buttons d-flex justify-content-around">
-                            <a role="button" class="btn btn-outline-primary" href="http://agilebluefox.github.io/tennis-quiz-mvc">Demo Site</a>
-                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/tennis-quiz-mvc">Github Repo</a>
+                            <div class="project-skills flex-xl-first">
+                                <p><span class="inline-heading">Technical Skills:</span>CSS, Git/Github, Gulp, HTML, JQuery,
+                                    Less, Webpack
+                                </p>
+                            </div>
+                            <div class="project-description">
+                                <p><span class="inline-heading">Description:</span>This project presented a fun and interesting
+                                    challenge to design a simple application using the principles of the Model-View-Controller
+                                    (MVC) paradigm. The interactive features are entirely dependent on the JQuery library
+                                    and the code is primarily organized in three distinct files: controller.js, model.js,
+                                    and view.js. Easy, right? Although the concept seems simple, this application created
+                                    some unexpected challenges that forced me to focus intently on maintaining the separation
+                                    of the components into isolated blocks. On several occassions, I found myself unwittingly
+                                    inserting code which belonged in one division, such as the model, into functions residing
+                                    in one of the other areas, such as the controller. Overall, this project gave me a greater
+                                    appreciation of the importance of design patterns and the planning, discipline and commitment
+                                    it takes to stay on course, especially when a quick shortcut might resolve a mind-bending
+                                    issue in the short run.
+                                </p>
+                            </div>
+                            <div class="project-notables">
+                                <p><span class="inline-heading">Notable Features:</span>The general build system was orchestrated
+                                    using Gulp JS and a custom gulpfile. Less, the CSS preprocessor, was used to aid in writing
+                                    more efficient css code. Webpack provided the final bundling of the javascript files
+                                    that were used in the "production" version of the application.</p>
+                            </div>
+                            <div class="project-buttons d-flex justify-content-around">
+                                <a role="button" class="btn btn-outline-primary" href="http://agilebluefox.github.io/tennis-quiz-mvc">Demo Site</a>
+                                <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/tennis-quiz-mvc">Github Repo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,48 +97,49 @@
     </section>
     <section id="project-02">
         <div class="section-container">
-            <div class="container-fluid row">
-                <div class="section-content d-flex flex-column flex-xl-row">
-                    <div class="image media p-5">
-                        <img class="d-flex section-image img-fluid align-self-center" src="images/o-results-frontend-ipad.png" alt="Desktop and mobile view of the interface">
-                    </div>
-                    <div class="project-info">
-                        <h6 class="project-name d-flex justify-content-center">O-Results Frontend</h6>
-                        <p class="summary">This app manages the participants at an orienteering event keeping track of the participant's status
-                            during the event. </p>
-                        <div class="project-skills">
-                            <p><span class="inline-heading">Technical Skills:</span>Angular, Angular CLI, CSS, Javascript, HTML,
-                                SASS, Typescript
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-content d-flex flex-column flex-xl-row">
+                        <div class="image media p-5">
+                            <img class="d-flex section-image img-fluid align-self-center" src="images/o-results-frontend-ipad.png" alt="Desktop and mobile view of the interface">
+                        </div>
+                        <div class="project-info">
+                            <h6 class="project-name d-flex justify-content-center">O-Results Frontend</h6>
+                            <p class="summary">This app manages the participants at an orienteering event keeping track of the participant's
+                                status during the event. </p>
+                            <div class="project-skills">
+                                <p><span class="inline-heading">Technical Skills:</span>Angular, Angular CLI, CSS, Javascript,
+                                    HTML, SASS, Typescript
 
-                            </p>
-                        </div>
-                        <div class="project-description">
-                            <p><span class="inline-heading">Description:</span>This is the frontend interface for the O-Results
-                                application built using the Angular framework. The user can add an event or select an already
-                                existing event to manage, view, or track participants as their status changes during the
-                                event. All data changes are saved to the associated Mongo collections through API calls to
-                                the routes on the Node server setup using Express. This project presented numerous challenges
-                                beginning with the database design to managing the state of the application using Observables,
-                                the foundation of reactive programming. Although manipulating and passing data through Angular
-                                parent and child components is relatively simple, I ran into issues when data was altered
-                                in components with no direct connection. As a result, I had the opportunity to solve problems
-                                dealing with the concepts of application state, object immutability, and the asynchronous
-                                nature of the web browser.
-
-                            </p>
-                        </div>
-                        <div class="project-notables">
-                            <p><span class="inline-heading">Notable Features:</span>The interface is designed using an alpha
-                                release of Material Design. I really like the consistent look and feel of Google's CSS framework
-                                and since our university relies heavily on Google Apps I intend to use it frequently in future
-                                applications. To implement the forms in the application I chose Angular's Reactive Forms
-                                technology which allowed me to keep most of the form logic in the component and maintain
-                                a cleaner, more maintainable template file.
-                            </p>
-                        </div>
-                        <div class="project-buttons d-flex justify-content-around">
-                            <!--<a role="button" class="btn btn-outline-primary" href="">Demo Site</a>-->
-                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-angular">Github Repo</a>
+                                </p>
+                            </div>
+                            <div class="project-description">
+                                <p><span class="inline-heading">Description:</span>This is the frontend interface for the O-Results
+                                    application built using the Angular framework. The user can add an event or select an
+                                    already existing event to manage, view, or track participants as their status changes
+                                    during the event. All data changes are saved to the associated Mongo collections through
+                                    API calls to the routes on the Node server setup using Express. This project presented
+                                    numerous challenges beginning with the database design to managing the state of the application
+                                    using Observables, the foundation of reactive programming. Although manipulating and
+                                    passing data through Angular parent and child components is relatively simple, I ran
+                                    into issues when data was altered in components with no direct connection. As a result,
+                                    I had the opportunity to solve problems dealing with the concepts of application state,
+                                    object immutability, and the asynchronous nature of the web browser.
+                                </p>
+                            </div>
+                            <div class="project-notables">
+                                <p><span class="inline-heading">Notable Features:</span>The interface is designed using an alpha
+                                    release of Material Design. I really like the consistent look and feel of Google's CSS
+                                    framework and since our university relies heavily on Google Apps I intend to use it frequently
+                                    in future applications. To implement the forms in the application I chose Angular's Reactive
+                                    Forms technology which allowed me to keep most of the form logic in the component and
+                                    maintain a cleaner, more maintainable template file.
+                                </p>
+                            </div>
+                            <div class="project-buttons d-flex justify-content-around">
+                                <!--<a role="button" class="btn btn-outline-primary" href="">Demo Site</a>-->
+                                <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-angular">Github Repo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,41 +148,43 @@
     </section>
     <section id="project-03">
         <div class="section-container">
-            <div class="container-fluid row">
-                <div class="section-content d-flex flex-column flex-xl-row">
-                    <div class="image media p-5 flex-xl-last">
-                        <img class="section-image img-fluid align-self-center" src="images/o-results-desktop.png" alt="Desktop and mobile view of the interface">
-                    </div>
-                    <div class="project-info">
-                        <h6 class="project-name d-flex justify-content-center">O-Results Backend</h6>
-                        <p class="summary">This is the server and database portion for the O-Results application. It provides data models, RESTful
-                            API's for various routes, data validation and a customizable logging system.</p>
-                        <div class="project-skills flex-xl-first">
-                            <p><span class="inline-heading">Technical Skills:</span>Express, Git/Github, Gulp, Mocha and Chai,
-                                MongoDB, Mongoose, Node, Node-Validator, Winston
-                            </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-content d-flex flex-column flex-xl-row">
+                        <div class="image media p-5 flex-xl-last">
+                            <img class="section-image img-fluid align-self-center" src="images/o-results-desktop.png" alt="Desktop and mobile view of the interface">
                         </div>
-                        <div class="project-description">
-                            <p><span class="inline-heading">Description:</span>This project is the backend portion of the O-Results
-                                App which tracks students participating on various courses at an orienteering event. The
-                                RESTful API is setup using the Express JS library providing routes for each of the data models
-                                mirrored as collections in the MongoDB NoSQL database. The database models are built using
-                                Mongoose and provide server-side validation rules in combination with the node-validator
-                                library using both default and custom-designed validators. The project includes mock data
-                                which can be added to the database by running a Gulp task that targets the test classes built
-                                using Mocha and Chai.
-                            </p>
-                        </div>
-                        <div class="project-notables">
-                            <p><span class="inline-heading">Notable Features:</span>I'm very interested in including testing
-                                and logging features into my applications. In this application, I used the Winston JS logging
-                                library to provide a sophisticated logging system that can be easily configured to allocate
-                                runtime messages that are based upon the logging level requested. These messages are useful
-                                in monitoring the server operations for debugging purposes in development mode and informational
-                                purposes when the Node JS server is running in production mode.</p>
-                        </div>
-                        <div class="project-buttons d-flex justify-content-around">
-                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-node">Github Repo</a>
+                        <div class="project-info">
+                            <h6 class="project-name d-flex justify-content-center">O-Results Backend</h6>
+                            <p class="summary">This is the server and database portion for the O-Results application. It provides data models,
+                                RESTful API's for various routes, data validation and a customizable logging system.</p>
+                            <div class="project-skills flex-xl-first">
+                                <p><span class="inline-heading">Technical Skills:</span>Express, Git/Github, Gulp, Mocha and
+                                    Chai, MongoDB, Mongoose, Node, Node-Validator, Winston
+                                </p>
+                            </div>
+                            <div class="project-description">
+                                <p><span class="inline-heading">Description:</span>This project is the backend portion of the
+                                    O-Results App which tracks students participating on various courses at an orienteering
+                                    event. The RESTful API is setup using the Express JS library providing routes for each
+                                    of the data models mirrored as collections in the MongoDB NoSQL database. The database
+                                    models are built using Mongoose and provide server-side validation rules in combination
+                                    with the node-validator library using both default and custom-designed validators. The
+                                    project includes mock data which can be added to the database by running a Gulp task
+                                    that targets the test classes built using Mocha and Chai.
+                                </p>
+                            </div>
+                            <div class="project-notables">
+                                <p><span class="inline-heading">Notable Features:</span>I'm very interested in including testing
+                                    and logging features into my applications. In this application, I used the Winston JS
+                                    logging library to provide a sophisticated logging system that can be easily configured
+                                    to allocate runtime messages that are based upon the logging level requested. These messages
+                                    are useful in monitoring the server operations for debugging purposes in development
+                                    mode and informational purposes when the Node JS server is running in production mode.</p>
+                            </div>
+                            <div class="project-buttons d-flex justify-content-around">
+                                <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/o-results-node">Github Repo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,45 +193,47 @@
     </section>
     <section id="project-04">
         <div class="section-container">
-            <div class="container-fluid row">
-                <div class="section-content d-flex flex-column flex-xl-row">
-                    <div class="image media p-5">
-                        <img class="section-image img-fluid align-self-center" src="images/hes-portfolio.png" alt="Desktop and mobile view of the interface">
-                    </div>
-                    <div class="project-info">
-                        <h6 class="project-name d-flex justify-content-center">HES Portfolio</h6>
-                        <p class="summary">My personal website as a Lecturer in the Department of Health and Exercise Studies at NC State University
-                            presenting some general info about me, my courses, and projects.</p>
-                        <div class="project-skills">
-                            <p><span class="inline-heading">Technical Skills:</span>CSS, Git/Github, GulpJS, HTML, Javascript,
-                                JSON, JQuery, LESS, Markdown
-                            </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-content d-flex flex-column flex-xl-row">
+                        <div class="image media p-5">
+                            <img class="section-image img-fluid align-self-center" src="images/hes-portfolio.png" alt="Desktop and mobile view of the interface">
                         </div>
-                        <div class="project-description">
-                            <p><span class="inline-heading">Description:</span>This is one of the first projects which gave
-                                me a genuine appreciation for the Javascript language in the context of web development.
-                                Some changes in our IT hosting regulations on campus prevented the use of server-side scripting
-                                languages, such as PHP, forcing me to rethink the design of my on-campus portfolio. To prevent
-                                repetitive code and avoid spreading the content throughout pages of HTML, I utilized an HTML
-                                template which gets populated by a combination of a JSON datafile and a few JQuery functions.
-                                However, the challenge doesn't end here. Since the information on the site requires frequent
-                                updating I implemented a build system using Gulp JS to quickly compile and publish changes
-                                as needed. Using LESS, I designed the CSS layout from scratch successfully creating a responsive
-                                design which allows my students using mobile devices to easily access the site and find the
-                                content relevant to their needs.
-                            </p>
-                        </div>
-                        <div class="project-notables">
-                            <p><span class="inline-heading">Notable Features:</span>The most notable feature on the site is
-                                the responsive menu which I designed using a mix of JQuery and CSS without the need of any
-                                additional javascript libraries. To add a little flare and to make the project more fun and
-                                interesting, I included an AJAX-rendered news feed using the Health section of the New York
-                                Times. Lastly, all of the syllabi files are written using Multimarkdown syntax and compiled
-                                into HTML files.</p>
-                        </div>
-                        <div class="project-buttons d-flex justify-content-around">
-                            <a role="button" class="btn btn-outline-primary" href="http://www4.ncsu.edu/~daconner/">Live Site</a>
-                            <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/hes-portfolio">Github Repo</a>
+                        <div class="project-info">
+                            <h6 class="project-name d-flex justify-content-center">HES Portfolio</h6>
+                            <p class="summary">My personal website as a Lecturer in the Department of Health and Exercise Studies at NC State
+                                University presenting some general info about me, my courses, and projects.</p>
+                            <div class="project-skills">
+                                <p><span class="inline-heading">Technical Skills:</span>CSS, Git/Github, GulpJS, HTML, Javascript,
+                                    JSON, JQuery, LESS, Markdown
+                                </p>
+                            </div>
+                            <div class="project-description">
+                                <p><span class="inline-heading">Description:</span>This is one of the first projects which gave
+                                    me a genuine appreciation for the Javascript language in the context of web development.
+                                    Some changes in our IT hosting regulations on campus prevented the use of server-side
+                                    scripting languages, such as PHP, forcing me to rethink the design of my on-campus portfolio.
+                                    To prevent repetitive code and avoid spreading the content throughout pages of HTML,
+                                    I utilized an HTML template which gets populated by a combination of a JSON datafile
+                                    and a few JQuery functions. However, the challenge doesn't end here. Since the information
+                                    on the site requires frequent updating I implemented a build system using Gulp JS to
+                                    quickly compile and publish changes as needed. Using LESS, I designed the CSS layout
+                                    from scratch successfully creating a responsive design which allows my students using
+                                    mobile devices to easily access the site and find the content relevant to their needs.
+                                </p>
+                            </div>
+                            <div class="project-notables">
+                                <p><span class="inline-heading">Notable Features:</span>The most notable feature on the site
+                                    is the responsive menu which I designed using a mix of JQuery and CSS without the need
+                                    of any additional javascript libraries. To add a little flare and to make the project
+                                    more fun and interesting, I included an AJAX-rendered news feed using the Health section
+                                    of the New York Times. Lastly, all of the syllabi files are written using Multimarkdown
+                                    syntax and compiled into HTML files.</p>
+                            </div>
+                            <div class="project-buttons d-flex justify-content-around">
+                                <a role="button" class="btn btn-outline-primary" href="http://www4.ncsu.edu/~daconner/">Live Site</a>
+                                <a role="button" class="btn btn-outline-info" href="https://github.com/agilebluefox/hes-portfolio">Github Repo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
