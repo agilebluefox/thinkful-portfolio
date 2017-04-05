@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const surge = require('gulp-surge');
 const del = require('del');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
 const config = require('./gulp.config.js')(); // Load the config settings
 const browserSync = require('browser-sync');
 
@@ -39,7 +40,7 @@ gulp.task('index', ['clean:index'], () => {
         .pipe(gulp.dest(config.build));
 });
 
-gulp.task('styles', ['compile-bs'], () => {
+gulp.task('styles', ['copy-bootstrap'], () => {
     log('Compiling sass files to css');
     return gulp.src(config.css + '**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -50,24 +51,26 @@ gulp.task('styles', ['compile-bs'], () => {
         .pipe(gulp.dest(config.build + 'styles/'));
 });
 
-gulp.task('compile-bs', () => {
-    log('Compile bootstrap');
-    return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
-        .pipe(sass({
-            outputStyle: 'compressed'
-        }).on('error', sass.logError))
-        .pipe($.autoprefixer({
-            browsers: ['last 2 version', '> 1%'],
-            flexbox: true
-        }))
-        .pipe(gulp.dest(config.build + 'styles/'));
+// gulp.task('compile-bs', () => {
+//     log('Compile bootstrap');
+//     return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
+//         .pipe(sass({
+//             outputStyle: 'compressed'
+//         }).on('error', sass.logError))
+//         .pipe(postcss([require('postcss-flexbugs-fixes')]))
+//         .pipe($.autoprefixer({
+//             browsers: ['last 2 version', '> 1%'],
+//             flexbox: true
+//         }))
+//         .pipe(gulp.dest(config.build + 'styles/'));
 
-});
+// });
 
 // Copy the bootstrap scss files to the styles directory
+// TODO: Use the minimized version in production
 gulp.task('copy-bootstrap', ['clean:styles'], () => {
-    return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
-        .pipe(gulp.dest(config.css));
+    return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css')
+        .pipe(gulp.dest(config.build + 'styles/'));
 });
 
 // Optimize images for the site

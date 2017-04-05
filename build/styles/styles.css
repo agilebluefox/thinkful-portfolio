@@ -51,22 +51,31 @@ a.nav-link:active {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+          align-items: center; }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  #cover {
-    margin-left: 0;
-    margin-right: 0; } }
+  #cover-caption {
+    margin: 0 auto;
+    width: 100%; } }
 
 #cover-caption {
   padding: 0 1rem;
   font-size: 1.4rem;
   font-weight: 200;
-  max-width: 60rem; }
+  max-width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #cover-caption h1.title, #cover-caption p {
+    text-align: center; }
 
 div.section-heading {
   height: 6rem;
@@ -81,9 +90,6 @@ h2.section {
   font-size: 1.2rem; }
 
 .row {
-  margin: 0; }
-
-div.row {
   padding: 0.5rem; }
 
 .section-image {
@@ -97,9 +103,6 @@ h6.project-name {
   text-transform: capitalize;
   font-size: 1.5rem;
   padding: 2rem 0; }
-
-div.image {
-  width: 100%; }
 
 div.project-info {
   padding: 0 3rem 3rem 3rem; }

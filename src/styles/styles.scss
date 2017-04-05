@@ -3,13 +3,12 @@ $light: #ddd;
 $med: #aaa;
 $dark: #444;
 $red: #520400;
-// $red: #000;
 $bg: rgba(0.8%, 11.8%, 25.7%, .9);
 $bg-comp1: #017bc6;
 $bg-comp2: rgba(0%, 7.1%, 16.8%, 1);
-$font-family: Roboto,
-Arial,
-Helvetica;
+$font-family: Roboto, Arial, Helvetica;
+
+// General Styles
 html,
 body {
     height: 100%;
@@ -64,31 +63,31 @@ a.nav-link:active {
     background-color: $bg;
 }
 
+// Cover page styles
+
 #cover {
     background: url('../images/blue-design.jpg') center center no-repeat;
     background-size: cover;
     height: 100%;
-    max-width: 100%;
+    max-width: 100%; 
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    /* IE10+ CSS styles go here */
-    #cover {
-        margin-left: 0;
-        margin-right: 0;
-    }
 }
 
 #cover-caption {
     padding: 0 1rem;
     font-size: 1.4rem;
     font-weight: 200;
-    max-width: 60rem; // text-align: center;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1.title, p {
+        text-align: center;
+    }
 }
+
+// Portfolio section styles
 
 div.section-heading {
     height: 6rem;
@@ -105,10 +104,6 @@ h2.section {
 }
 
 .row {
-    margin: 0;
-}
-
-div.row {
     padding: 0.5rem;
 }
 
@@ -125,10 +120,6 @@ h6.project-name {
     text-transform: capitalize;
     font-size: 1.5rem;
     padding: 2rem 0;
-}
-
-div.image {
-    width: 100%;
 }
 
 div.project-info {
@@ -175,6 +166,8 @@ div.project-buttons {
     }
 }
 
+// About section styles
+
 #about {
     background-color: $bg;
     color: $light;
@@ -187,6 +180,8 @@ div.project-buttons {
 h6.about-section {
     color: $bg-comp1;
 }
+
+// Media queries
 
 @media screen and (min-width: 576px) {
     #cover-caption p {
@@ -263,5 +258,16 @@ h6.about-section {
                 width: 100%;
             }
         }
+    }
+}
+
+// IE-specific styles
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    #cover-caption {
+        margin: 0 auto;
+        width: 100%;
     }
 }
