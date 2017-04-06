@@ -5,6 +5,9 @@ body {
 body {
   color: #ddd; }
 
+div {
+  border: dotted 1px red; }
+
 h1,
 h2,
 h3,
@@ -53,27 +56,11 @@ a.nav-link:active {
       -ms-flex-align: center;
           align-items: center; }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* IE10+ CSS styles go here */
-  #cover-caption {
-    margin: 0 auto;
-    width: 100%; } }
-
 #cover-caption {
   padding: 0 1rem;
   font-size: 1.4rem;
   font-weight: 200;
-  max-width: 60rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  max-width: 60rem; }
   #cover-caption h1.title, #cover-caption p {
     text-align: center; }
 
@@ -90,7 +77,9 @@ h2.section {
   font-size: 1.2rem; }
 
 .row {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  margin: 0;
+  width: 100%; }
 
 .section-image {
   margin: auto; }
@@ -171,8 +160,7 @@ h6.about-section {
 
 @media screen and (min-width: 1200px) {
   div.image {
-    padding: 2rem;
-    width: 400%; }
+    padding: 2rem; }
   .section-image {
     width: 30em;
     height: auto; }
@@ -194,3 +182,9 @@ h6.about-section {
       width: 100%; }
     #project-03 div.image {
       width: 100%; } } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  #cover-caption {
+    margin: 0 auto;
+    width: 100%; } }
