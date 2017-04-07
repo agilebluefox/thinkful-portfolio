@@ -5,9 +5,6 @@ body {
 body {
   color: #ddd; }
 
-div {
-  border: dotted 1px red; }
-
 h1,
 h2,
 h3,
@@ -82,6 +79,9 @@ h2.section {
   margin: 0;
   width: 100%; }
 
+.section-image {
+  width: 80%; }
+
 span.inline-heading {
   font-weight: bold;
   padding-right: 0.5rem; }
@@ -89,7 +89,8 @@ span.inline-heading {
 h6.project-name {
   text-transform: capitalize;
   font-size: 1.5rem;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  text-align: center; }
 
 div.project-info {
   padding: 0 3rem 3rem 3rem; }
@@ -124,7 +125,7 @@ div.project-buttons {
   #project-04 h6.project-name {
     color: #ddd; }
 
-#about {
+#about-section {
   background-color: rgba(2, 30, 66, 0.9);
   color: #ddd; }
 

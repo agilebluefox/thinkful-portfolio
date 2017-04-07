@@ -19,10 +19,6 @@ body {
     color: $light;
 }
 
-div {
-    border: dotted 1px red;
-}
-
 h1,
 h2,
 h3,
@@ -110,9 +106,9 @@ h2.section {
     width: 100%;
 }
 
-// .section-image {
-//     margin: auto;
-// }
+.section-image {
+    width: 80%;
+}
 
 span.inline-heading {
     font-weight: bold;
@@ -123,6 +119,7 @@ h6.project-name {
     text-transform: capitalize;
     font-size: 1.5rem;
     padding: 2rem 0;
+    text-align: center;
 }
 
 div.project-info {
@@ -170,7 +167,7 @@ div.project-buttons {
 }
 
 // About section styles
-#about {
+#about-section {
     background-color: $bg;
     color: $light;
 }
@@ -256,13 +253,3 @@ h6.about-section {
         }
     }
 }
-
-// IE-specific styles
-// @media all and (-ms-high-contrast: none),
-// (-ms-high-contrast: active) {
-//     /* IE10+ CSS styles go here */
-//     // #cover-caption {
-//     //     margin: 0 auto;
-//     //     width: 100%;
-//     // }
-// }
