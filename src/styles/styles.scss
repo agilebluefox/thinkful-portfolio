@@ -183,7 +183,7 @@ h6.about-section {
 // contact section
 
 #contact-section {
-    background-color: $light;
+    background: url('../images/contact.png') center center no-repeat;
     background-size: cover;
     height: 100%;
     max-width: 100%;
@@ -192,12 +192,12 @@ h6.about-section {
 }
 
 #contact-caption {
-    color: $dark;
+    color: $bg-comp2;
     padding: 0 1rem;
     font-size: 1.4rem;
     font-weight: 200;
     max-width: 60rem;
-    h1.email {
+    p.email {
         text-align: center;
     }
 }
