@@ -180,6 +180,29 @@ h6.about-section {
     color: $bg-comp1;
 }
 
+// contact section
+
+#contact-section {
+    background-color: $light;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contact-caption {
+    color: $dark;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    h1.email {
+        text-align: center;
+    }
+}
+
+
 // Media queries
 @media screen and (min-width: 576px) {
     #cover-caption p {
