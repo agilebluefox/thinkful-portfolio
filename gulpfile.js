@@ -51,21 +51,6 @@ gulp.task('styles', ['copy-bootstrap'], () => {
         .pipe(gulp.dest(config.build + 'styles/'));
 });
 
-// gulp.task('compile-bs', () => {
-//     log('Compile bootstrap');
-//     return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
-//         .pipe(sass({
-//             outputStyle: 'compressed'
-//         }).on('error', sass.logError))
-//         .pipe(postcss([require('postcss-flexbugs-fixes')]))
-//         .pipe($.autoprefixer({
-//             browsers: ['last 2 version', '> 1%'],
-//             flexbox: true
-//         }))
-//         .pipe(gulp.dest(config.build + 'styles/'));
-
-// });
-
 // Copy the bootstrap scss files to the styles directory
 // TODO: Use the minimized version in production
 gulp.task('copy-bootstrap', ['clean:styles'], () => {
